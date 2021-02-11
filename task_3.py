@@ -8,5 +8,3 @@ def hello(name):
     result = print("Hello " + name +"!")
     
     return result
-
-test = hello("Hloni")
