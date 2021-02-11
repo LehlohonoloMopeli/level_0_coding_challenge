@@ -18,5 +18,5 @@ def area_of_triangle(side1, side2, side3):
             return "Negative numbers not permitted!"
         
     except Exception as error:                                      # To handle unwanted inputs such as strings
-        return "Not a Valid input!"
+        return "Invalid input!"
 

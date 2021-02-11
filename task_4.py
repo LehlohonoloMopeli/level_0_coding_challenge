@@ -4,10 +4,12 @@ def even_or_odd(number):
         Output: "even" or "odd".
     
     """
-    if number % 2 == 1:
-        return "odd"
-    elif number % 2 == 0:
-        return "even"
+    if type(number) == int:
+        if number % 2 == 1:
+            return "odd"
+        elif number % 2 == 0:
+            return "even"
     else:
-        return "Not a valid input!"
+        return "Invalid input!"
+    
     

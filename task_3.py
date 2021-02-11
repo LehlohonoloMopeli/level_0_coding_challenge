@@ -5,6 +5,8 @@ def hello(name):
         type(output) : str 
     
     """
-    result = print("Hello " + name +"!")
-    
-    return result
+    if type(name) == str:
+        result = print("Hello " + name +"!")
+        return result
+    else:
+        return "Invalid input!"

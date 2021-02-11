@@ -14,5 +14,5 @@ def get_maximum(num1, num2, num3):
             return num3
         
     except Exception as error:                          # To handle unwanted input (handle all possible scenarios)
-        return "Not a Valid input!"
+        return "Invalid input!"
     
