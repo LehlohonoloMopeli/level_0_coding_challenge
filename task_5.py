@@ -7,7 +7,7 @@ def area_of_triangle(side1, side2, side3):
     
     """
     try:
-        if side1 > 0 and side2 > 0 and side3> 0:
+        if side1 > 0 and side2 > 0 and side3> 0:                   # Length cannot be negative
             semiparameter = (0.5) * (side1 + side2 + side3)        # semiparameter is equal to half the parameter of the triangle
             
             area = sqrt(semiparameter * (semiparameter - side1) * (semiparameter - side2)
