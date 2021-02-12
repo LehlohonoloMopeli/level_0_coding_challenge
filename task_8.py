@@ -9,21 +9,21 @@ def hours_and_minutes(number):
         minutes = number % 60
         
         if hours == 0 and minutes ==0:
-            return None
+            return "0 hours, 0 minutes"
         elif hours ==0 and minutes ==1:
-            return str(minutes) + " minute"
+            return str(hours) + " hours, " + str(minutes) + " minute"
         if hours == 0 and minutes > 0:
-            return str(minutes) + " minutes"
+            return str(hours) + " hours, " + str(minutes) + " minutes"
         
         elif hours == 1 and minutes ==0:
-            return str(hours) + " hour"
+            return str(hours) + " hour, " + "0 minutes" 
         elif hours == 1 and minutes ==1:
             return str(hours) + " hour, " + str(minutes) + " minute"
         elif hours == 1 and minutes > 1:
             return str(hours) + " hour, " + str(minutes) + " minutes"
         
         elif hours > 1 and minutes ==0:
-            return str(hours) + " hours"
+            return str(hours) + " hours, " + str(minutes) + " minutes"
         elif hours > 1 and minutes ==1:
             return str(hours) + " hours, " + str(minutes) + " minute"
         elif hours > 1 and minutes > 1:
@@ -31,3 +31,4 @@ def hours_and_minutes(number):
     
     else:
         return "Invalid input!"
+    
