@@ -6,7 +6,7 @@ def hello(name):
     
     """
     if type(name) == str:
-        result = print("Hello " + name +"!")
+        result = print("Hello " + name + "!")
         return result
     else:
         return "Invalid input!"

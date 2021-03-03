@@ -1,27 +1,27 @@
 def vowels(word):
     """
-        Description: Takes a string and returns the vowels in the string.
-        type(output): str
-    
+    Description: Takes a string and returns the vowels in the string.
+    type(output): str
+
     """
     if type(word) == str:
-        vowelsList = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
-        
-        lettersOfInterest = []
-        
+        vowels_list = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
+
+        letters_of_interest = []
+
         result = ""
-        
+
         for letter in word:
-            for element in vowelsList:
+            for element in vowels_list:
                 if letter == element:
-                    lettersOfInterest.append(letter)
-        
-        if len(lettersOfInterest) == 0:
+                    letters_of_interest.append(letter)
+
+        if len(letters_of_interest) == 0:
             return None
-        if len(lettersOfInterest) > 0:
-            for element in lettersOfInterest:
-                result += element 
+        if len(letters_of_interest) > 0:
+            for element in letters_of_interest:
+                result += element
             return result
-    
+
     else:
         return "Invalid input!"

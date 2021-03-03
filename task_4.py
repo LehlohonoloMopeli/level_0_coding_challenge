@@ -7,7 +7,7 @@ def even_or_odd(number):
     if type(number) == int:
         if number % 2 == 1:
             return "odd"
-        elif number % 2 == 0:
+        else:
             return "even"
     else:
         return "Invalid input!"
